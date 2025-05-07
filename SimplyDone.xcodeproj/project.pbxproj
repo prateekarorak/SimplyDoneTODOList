@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 		F2CBB0F42D95784700D85FB5 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBB0F32D95784700D85FB5 /* DIContainer.swift */; };
 		F2CBB0F62D957A3900D85FB5 /* ToggleTaskCompletionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBB0F52D957A3900D85FB5 /* ToggleTaskCompletionUseCase.swift */; };
 		F2CBB0F82D957A4500D85FB5 /* DeleteTaskUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBB0F72D957A4500D85FB5 /* DeleteTaskUseCase.swift */; };
+		F2DC90CC2DA683F10004342E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DC90CB2DA683F10004342E /* SplashScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +74,12 @@
 		F2CBB0F32D95784700D85FB5 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		F2CBB0F52D957A3900D85FB5 /* ToggleTaskCompletionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTaskCompletionUseCase.swift; sourceTree = "<group>"; };
 		F2CBB0F72D957A4500D85FB5 /* DeleteTaskUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTaskUseCase.swift; sourceTree = "<group>"; };
+		F2DC90CB2DA683F10004342E /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F2DC90D12DA685910004342E /* Presentation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Presentation; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F2CBB0932D955AAA00D85FB5 /* Frameworks */ = {
@@ -134,7 +140,6 @@
 				F28120A62D9E718C000BF32E /* Info.plist */,
 				F2CBB0D52D955FF600D85FB5 /* CoreDataModel */,
 				F2CBB0C72D955B5100D85FB5 /* App */,
-				F2CBB0CB2D955B9F00D85FB5 /* Home */,
 				F2CBB0992D955AAA00D85FB5 /* SimplyDoneApp.swift */,
 				F2CBB09B2D955AAA00D85FB5 /* ContentView.swift */,
 				F2CBB09D2D955AAA00D85FB5 /* Assets.xcassets */,
@@ -180,7 +185,10 @@
 		F2CBB0C72D955B5100D85FB5 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				F2DC90D02DA685860004342E /* Login Screens */,
+				F2DC90CA2DA6839C0004342E /* Splash Screen */,
 				F2CBB0DC2D95612A00D85FB5 /* Core */,
+				F2CBB0CB2D955B9F00D85FB5 /* Home */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -291,6 +299,30 @@
 			path = DIContainer;
 			sourceTree = "<group>";
 		};
+		F2DC90CA2DA6839C0004342E /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F2DC90CD2DA683F70004342E /* Presentation */,
+			);
+			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		F2DC90CD2DA683F70004342E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F2DC90CB2DA683F10004342E /* SplashScreenViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F2DC90D02DA685860004342E /* Login Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F2DC90D12DA685910004342E /* Presentation */,
+			);
+			path = "Login Screens";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,6 +337,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F2DC90D12DA685910004342E /* Presentation */,
 			);
 			name = SimplyDone;
 			productName = SimplyDone;
@@ -425,6 +460,7 @@
 				F2CBB0F82D957A4500D85FB5 /* DeleteTaskUseCase.swift in Sources */,
 				F2CBB09C2D955AAA00D85FB5 /* ContentView.swift in Sources */,
 				F2CBB09A2D955AAA00D85FB5 /* SimplyDoneApp.swift in Sources */,
+				F2DC90CC2DA683F10004342E /* SplashScreenViewController.swift in Sources */,
 				F28120A92D9FB14C000BF32E /* BiometricsAuthManager.swift in Sources */,
 				F2CBB0F62D957A3900D85FB5 /* ToggleTaskCompletionUseCase.swift in Sources */,
 				F2CBB0F12D9576EE00D85FB5 /* TaskListView.swift in Sources */,

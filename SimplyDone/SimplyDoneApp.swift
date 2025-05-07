@@ -11,7 +11,7 @@ import SwiftUI
 struct SimplyDoneApp: App {
     var body: some Scene {
         WindowGroup {
-            TaskListView(viewModel: TaskListViewModel())
+            RootView()
         }
     }
 }
